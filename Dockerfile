@@ -32,7 +32,7 @@ RUN groupadd -g ${gid} ${group} && useradd -u ${uid} -g ${group} -s /bin/bash ${
 # RUN groupadd -g ${gid} docker && useradd -u ${uid} -g ${group} -m ${user}
 
 # Add the user to the docker group
-RUN usermod -aG docker ${user}
+# RUN usermod -aG docker ${user}
 
 # Switch to the new user
 USER ${user}
