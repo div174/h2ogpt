@@ -16,7 +16,7 @@ WORKDIR /workspace
 
 COPY . /workspace/
 
-COPY build_info.txt /workspace/
+# COPY build_info.txt /workspace/
 
 RUN cd /workspace && ./docker_build_script_ubuntu.sh
 
